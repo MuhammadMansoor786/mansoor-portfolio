@@ -283,26 +283,13 @@ h1, .section-title { font-family: 'Manrope', 'Segoe UI', sans-serif; letter-spac
 .narrow .section-title { margin-bottom: 24px; }
 .about-copy { margin-bottom: 0; color: var(--subtle); font-size: 1.08rem; line-height: 1.9; }
 
-.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.skill-group {
-    min-height: 230px;
-    padding: 27px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 17px;
-    box-shadow: 0 8px 30px rgba(32, 34, 73, .035);
-}
-
-.group-heading { display: flex; align-items: center; gap: 13px; margin-bottom: 21px; }
-.group-heading h3 { margin: 0; font: 700 1.16rem 'Manrope', sans-serif; letter-spacing: -.03em; }
-.group-number { color: var(--primary); font: 700 .76rem 'Manrope', sans-serif; }
-.skill-list, .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
-.skill-list li, .project-tags li { padding: 7px 11px; color: var(--subtle); background: var(--muted); border: 1px solid var(--border); border-radius: 8px; font-size: .8rem; font-weight: 600; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.project-tags li { padding: 7px 11px; color: var(--subtle); background: var(--muted); border: 1px solid var(--border); border-radius: 8px; font-size: .8rem; font-weight: 600; }
 
 .section-heading-row { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
 .section-heading-row .section-title { max-width: 600px; margin-bottom: 32px; }
 .heading-link { margin-bottom: 39px; white-space: nowrap; }
-.projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 
 .project-card {
     display: flex;
@@ -389,6 +376,8 @@ h1, .section-title { font-family: 'Manrope', 'Segoe UI', sans-serif; letter-spac
     .nav-menu { gap: 19px; }
     .hero-layout { gap: 36px; }
     .section { padding: 86px 0; }
+    .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .project-card:last-child { grid-column: 1 / -1; width: calc(50% - 9px); justify-self: center; }
 }
 
 @media (max-width: 700px) {
@@ -422,11 +411,11 @@ h1, .section-title { font-family: 'Manrope', 'Segoe UI', sans-serif; letter-spac
     .portrait-caption { display: none; }
     .scroll-cue { bottom: -55px; }
     .section { padding: 76px 0; }
-    .skills-grid, .certifications-grid { grid-template-columns: 1fr; }
-    .skill-group { min-height: auto; }
+    .certifications-grid { grid-template-columns: 1fr; }
     .section-heading-row { display: block; }
     .heading-link { display: inline-block; margin: -13px 0 25px; }
     .projects-grid { grid-template-columns: 1fr; }
+    .project-card:last-child { grid-column: auto; width: auto; }
     .contact-layout { grid-template-columns: 1fr; gap: 35px; }
 }
 
