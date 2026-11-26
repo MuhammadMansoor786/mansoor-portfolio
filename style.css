@@ -377,7 +377,7 @@ h1, .section-title { font-family: 'Manrope', 'Segoe UI', sans-serif; letter-spac
     .hero-layout { gap: 36px; }
     .section { padding: 86px 0; }
     .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .project-card:last-child { grid-column: 1 / -1; width: calc(50% - 9px); justify-self: center; }
+    .project-card:last-child:nth-child(odd) { grid-column: 1 / -1; width: calc(50% - 9px); justify-self: center; }
 }
 
 @media (max-width: 700px) {
@@ -415,7 +415,7 @@ h1, .section-title { font-family: 'Manrope', 'Segoe UI', sans-serif; letter-spac
     .section-heading-row { display: block; }
     .heading-link { display: inline-block; margin: -13px 0 25px; }
     .projects-grid { grid-template-columns: 1fr; }
-    .project-card:last-child { grid-column: auto; width: auto; }
+    .project-card:last-child:nth-child(odd) { grid-column: auto; width: auto; }
     .contact-layout { grid-template-columns: 1fr; gap: 35px; }
 }
 
