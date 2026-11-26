@@ -3,237 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mansoor Ahmad - Computer Science Undergraduate & Software Developer</title>
+    <meta name="description" content="Muhammad Mansoor is a full-stack web and AI developer building scalable web apps, APIs, and intelligent tools.">
+    <meta name="theme-color" content="#f7f8fc">
+    <title>Muhammad Mansoor | Full-Stack Web &amp; AI Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">MA</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#resume" class="nav-link">Resume</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="theme-toggle" id="themeToggle">
-                <span class="theme-icon">🌙</span>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Muhammad Mansoor, home">MM<span>.</span></a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
             </button>
-        </div>
-    </nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#certifications">Certifications</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme">
+                <span class="theme-icon" aria-hidden="true">☾</span>
+            </button>
+        </nav>
+    </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section home">
-        <div class="container">
-            <div class="home-content"><div class="profile-image-container">
-    <img src="profile.jpeg" alt="Mansoor Ahmad" style="width: 200px; border-radius: 50%;">
-</div>
-                <h1 class="home-title">Hello, I'm <span class="highlight">Mansoor Ahmad</span></h1>
-                <h2 class="home-subtitle">Computer Science Undergraduate & Software Developer</h2>
-                <p class="home-description">
-                    A motivated Computer Science undergraduate at AWKUM (2023–2027) with a solid foundation in programming, 
-                    databases, and web development. Passionate about continuous learning and building real-world projects.
-                </p>
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am a motivated Computer Science undergraduate at AWKUM (2023–2027) with a solid foundation in programming, 
-                        databases, and web development. I have a strong analytical mindset, enjoy software troubleshooting, and am 
-                        passionate about continuous learning and building real-world projects.
+    <main>
+        <section id="home" class="hero section">
+            <div class="container hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="status-dot"></span> Available for opportunities</p>
+                    <h1>Hi, I’m <span class="highlight">Muhammad Mansoor.</span></h1>
+                    <h2>Full-Stack Web &amp; AI Developer <span class="title-divider">|</span> BS Computer Science</h2>
+                    <p class="hero-description">
+                        I build scalable full-stack web apps, REST and serverless APIs, cloud SQL databases, and AI-powered tools that solve real problems.
                     </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Explore my work <span aria-hidden="true">↗</span></a>
+                        <a href="resume.pdf" class="text-link" download>Download resume <span aria-hidden="true">↓</span></a>
+                    </div>
+                </div>
+                <div class="hero-portrait">
+                    <div class="portrait-frame">
+                        <img src="profile.jpeg" alt="Portrait of Muhammad Mansoor" class="profile-image">
+                    </div>
+                    <span class="portrait-caption">Building thoughtful digital experiences</span>
+                </div>
+                <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span></span> Scroll to explore</a>
+            </div>
+        </section>
+
+        <section id="about" class="section section-muted">
+            <div class="container narrow">
+                <p class="eyebrow section-eyebrow">A little about me</p>
+                <h2 class="section-title">Turning ideas into <span class="highlight">useful software.</span></h2>
+                <p class="about-copy">
+                    I’m a BS Computer Science student at AWKUM (2023–2027) and a developer focused on the full product journey—from polished React interfaces to reliable APIs and cloud-hosted data. I enjoy building scalable full-stack applications, REST and serverless services, cloud SQL solutions, and AI-powered tools. I care about practical problem-solving, maintainable code, and making technology genuinely useful.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <p class="eyebrow section-eyebrow">Tools of the trade</p>
+                <h2 class="section-title">Skills &amp; tech stack</h2>
+                <div class="skills-grid">
+                    <article class="skill-group">
+                        <div class="group-heading"><span class="group-number">01</span><h3>Frontend</h3></div>
+                        <ul class="skill-list">
+                            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>Tailwind CSS</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group">
+                        <div class="group-heading"><span class="group-number">02</span><h3>Backend</h3></div>
+                        <ul class="skill-list">
+                            <li>Node.js</li><li>Express</li><li>Hono</li><li>Python</li><li>FastAPI</li><li>PHP</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group">
+                        <div class="group-heading"><span class="group-number">03</span><h3>Databases &amp; Cloud</h3></div>
+                        <ul class="skill-list">
+                            <li>MySQL</li><li>PostgreSQL</li><li>Aiven Cloud</li><li>Netlify</li><li>Git / GitHub</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">🐍</div>
-                    <h3>Python</h3>
-                    <p>Programming and scripting</p>
+        <section id="projects" class="section section-muted">
+            <div class="container">
+                <p class="eyebrow section-eyebrow">Selected work</p>
+                <div class="section-heading-row">
+                    <h2 class="section-title">Projects built to make a difference.</h2>
+                    <a class="text-link heading-link" href="https://github.com/MuhammadMansoor786" target="_blank" rel="noopener noreferrer">More on GitHub <span aria-hidden="true">↗</span></a>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚡</div>
-                    <h3>C++</h3>
-                    <p>Object-oriented programming</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">☕</div>
-                    <h3>Java</h3>
-                    <p>Enterprise applications</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🌐</div>
-                    <h3>HTML</h3>
-                    <p>Web structure and markup</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🎨</div>
-                    <h3>CSS</h3>
-                    <p>Styling and responsive design</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>JavaScript</h3>
-                    <p>Interactive web development</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🗄️</div>
-                    <h3>Advanced DBMS & SQL</h3>
-                    <p>Database management systems</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">�</div>
-                    <h3>Software Troubleshooting</h3>
-                    <p>Problem-solving and debugging</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-content">
-                <h3 class="cert-title">Microsoft Certifications</h3>
-                <div class="cert-grid">
-                    <div class="cert-card">
-                        <div class="cert-image-placeholder">
-                            <span>📜</span>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-topline"><span class="project-index">01</span><span class="project-type">Civic technology</span></div>
+                        <h3>SmartCity-Tracker</h3>
+                        <p>A full-stack civic issue-reporting platform with role-based Client and Admin panels, a serverless Node.js API, and Aiven Cloud MySQL with compressed Base64 image storage.</p>
+                        <ul class="project-tags"><li>Node.js</li><li>Serverless</li><li>MySQL</li></ul>
+                        <div class="project-links">
+                            <a href="https://smartcity-tracker.netlify.app" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                            <a href="https://github.com/MuhammadMansoor786/SmartCity-Tracker" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                         </div>
-                        <h4>Azure Fundamentals</h4>
-                        <p>Microsoft Certified: Azure Fundamentals</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-image-placeholder">
-                            <span>📜</span>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-topline"><span class="project-index">02</span><span class="project-type">AI &amp; nutrition</span></div>
+                        <h3>NutriFlora</h3>
+                        <p>An AI-assisted vegetable recognition and nutrition portal built with React, TypeScript, and Aiven Cloud MySQL.</p>
+                        <ul class="project-tags"><li>React</li><li>TypeScript</li><li>AI</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/MuhammadMansoor786" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                         </div>
-                        <h4>Power Platform</h4>
-                        <p>Microsoft Power Platform Fundamentals</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-image-placeholder">
-                            <span>📜</span>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-topline"><span class="project-index">03</span><span class="project-type">AI &amp; knowledge</span></div>
+                        <h3>Quran Guidance AI</h3>
+                        <p>A multilingual Islamic guidance and Shariah calculation app in English, Urdu, and Roman Urdu, built with React, TypeScript, FastAPI, MySQL, and JWT authentication.</p>
+                        <ul class="project-tags"><li>React</li><li>FastAPI</li><li>JWT</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/MuhammadMansoor786/Quran-Companion-AI" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                         </div>
-                        <h4>JavaScript Developer</h4>
-                        <p>MTA: JavaScript Programming</p>
-                    </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-topline"><span class="project-index">04</span><span class="project-type">Generative AI</span></div>
+                        <h3>NexusAgent Studio</h3>
+                        <p>An autonomous AI agent platform built with React, TypeScript, and Generative AI workflows.</p>
+                        <ul class="project-tags"><li>React</li><li>TypeScript</li><li>AI workflows</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/MuhammadMansoor786" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image-placeholder">
-                        <span>🖥️</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>E-Commerce Website</h3>
-                        <p>A full-stack e-commerce platform with product catalog, cart functionality, and payment integration.</p>
-                        <a href="#" class="btn btn-secondary">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image-placeholder">
-                        <span>📱</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>A productivity application for managing tasks with drag-and-drop functionality and team collaboration.</p>
-                        <a href="#" class="btn btn-secondary">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image-placeholder">
-                        <span>🌡️</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Weather Dashboard</h3>
-                        <p>A real-time weather application with location-based forecasts and interactive weather maps.</p>
-                        <a href="#" class="btn btn-secondary">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image-placeholder">
-                        <span>📊</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Data Visualization Tool</h3>
-                        <p>An interactive dashboard for visualizing complex datasets with charts and graphs.</p>
-                        <a href="#" class="btn btn-secondary">View Project</a>
-                    </div>
+        <section id="certifications" class="section">
+            <div class="container">
+                <p class="eyebrow section-eyebrow">Learning &amp; credentials</p>
+                <h2 class="section-title">Certifications</h2>
+                <div class="certifications-grid">
+                    <article class="certification-card microsoft-card">
+                        <span class="cert-mark" aria-hidden="true">M</span>
+                        <div>
+                            <p class="cert-issuer">Microsoft</p>
+                            <h3>Microsoft Certifications</h3>
+                            <p>Azure Fundamentals · Power Platform Fundamentals · MTA: JavaScript Programming</p>
+                        </div>
+                    </article>
+                    <article class="certification-card">
+                        <span class="cert-mark nrsp-mark" aria-hidden="true">N</span>
+                        <div>
+                            <p class="cert-issuer">National Rural Support Programme</p>
+                            <h3>NRSP Certificate</h3>
+                            <p>National Rural Support Programme certificate.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="section resume">
-        <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <div class="resume-content">
-                <p>Download my resume to learn more about my education, skills, and experience.</p>
-                <a href="resume.pdf" class="btn btn-primary" download>
-                    <span>📄</span> Download Resume
-                </a>
+        <section id="contact" class="section contact-section">
+            <div class="container contact-layout">
+                <div>
+                    <p class="eyebrow section-eyebrow">Let’s build something</p>
+                    <h2 class="section-title">Have a good idea?<br><span class="highlight">Let’s talk.</span></h2>
+                </div>
+                <div class="contact-links">
+                    <a class="contact-link" href="mailto:khan924432@gmail.com"><span>Email</span><strong>khan924432@gmail.com</strong><span aria-hidden="true">↗</span></a>
+                    <a class="contact-link" href="https://github.com/MuhammadMansoor786" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>MuhammadMansoor786</strong><span aria-hidden="true">↗</span></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-content">
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Mansoor Ahmad. All rights reserved.</p>
+        <div class="container footer-content">
+            <a class="brand" href="#home" aria-label="Back to top">MM<span>.</span></a>
+            <p>Designed &amp; built by Muhammad Mansoor · <span id="year">2026</span></p>
+            <a href="#home" class="back-to-top">Back to top ↑</a>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
